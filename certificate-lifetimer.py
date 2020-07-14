@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 #
-#   certificate-lifetimer
+#   Certificate Lifetimer
 #
 
-__version__ = '0.0.1'
+__version__ = '1.0.0'
 __author__ = 'Kenichi Terashita'
 
 import ssl
@@ -12,7 +12,6 @@ import argparse
 import textwrap
 import certifi
 import os
-import datetime
 from dateutil.parser import parse
 
 
@@ -53,19 +52,8 @@ def get_certificate(args):
     except:
         print(fqdn)
 
-    # print(certificate_info['subject'][5][0][1])
-    # print(parse(certificate_info['notBefore']))
-    # print(parse(certificate_info['notAfter']))
-
-
-    # print(certificate_info['subject'][5][0][1] + ',', not_after - not_before)
-
-
-
-
 
 def main():
-    # Predefined Config an Options
     args = get_argparse()
 
     get_certificate(args)
