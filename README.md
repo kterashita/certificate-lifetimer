@@ -11,6 +11,7 @@ $ git clone https://github.com/kterashita/certificate-lifetimer.git
 $ cd certificate-lifetimer
 $ chmod +x certificate-lifetimer
 $ ./certificate-lifetimer -d google.com
+google.com, 84 days, 0:00:00
 ```
 
 ## Release History
